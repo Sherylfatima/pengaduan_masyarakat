@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>APM | Dashboard</title>
+    <title>APML | Dashboard</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -65,11 +65,12 @@
     </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer">
-        <div class="float-right d-none d-sm-block">
+        <div class="text-center">
+            <div class="float-right d-none d-sm-block">
             <b>Version</b> 1
         </div>
-        <strong>Copyright &copy; 2023 Template By <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights
-        reserved.
+        <strong class="text center">Copyright &copy; 2023 Template By <a href="http://adminlte.io">UKK RPL</a>.</strong> All rights
+        reserved.</div>
     </footer>
     </div>
     <!-- ./wrapper -->

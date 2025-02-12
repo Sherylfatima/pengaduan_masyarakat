@@ -15,18 +15,12 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->foreignId('kategori_id')->constrained('kategoris')->onDelete('cascade');
+            $table->date('tanggal_pengaduan');
             $table->text('isi_laporan');
             $table->text('foto');
             $table->enum('status', ['proses','diterima','selesai']);
             $table->timestamps();
         });
-    } 
-
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::dropIfExists('pengaduans');
     }
+
 };

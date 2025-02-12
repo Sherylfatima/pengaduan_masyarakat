@@ -3,7 +3,7 @@
     <a href="../../index3.html" class="brand-link">
         <img src="/dist/img/AdminLTELogo.png" alt="APM Logo" class="brand-image img-circle elevation-3"
             style="opacity: .8">
-        <span class="brand-text font-weight-light">APML</span>
+        <span class="brand-text font-weight-light">Sheryl</span>
     </a>
 
     <!-- Sidebar -->
@@ -24,67 +24,56 @@
                 data-accordion="false">
                 <li class="nav-header">MASTER DATA</li>
                 <li class="nav-item">
-                    <a href="../widgets.html" class="nav-link active">
+                    <a href="/dashboard" class="nav-link {{ request()->is('dashboard') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
-                        <p>
-                            Dashboard
-                        </p>
+                        <p>Dashboard</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="masyarakat.html" class="nav-link">
+                    <a href="/masyarakat" class="nav-link {{ request()->is('masyarakat') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-users"></i>
-                        <p>
-                            Masyarakat
-                        </p>
+                        <p>Masyarakat</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="pegawai.html" class="nav-link">
+                    <a href="/pegawai" class="nav-link {{ request()->is('pegawai') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-user"></i>
-                        <p>
-                            Pegawai
-                        </p>
+                        <p>Pegawai</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="kategori.html" class="nav-link">
+                    <a href="/kategori" class="nav-link {{ request()->is('kategori') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-book"></i>
-                        <p>
-                            Kategori Pengaduan
-                        </p>
+                        <p>Kategori Pengaduan</p>
                     </a>
                 </li>
                 <li class="nav-header">LAPORAN</li>
                 <li class="nav-item">
-                    <a href="laporan-masuk.html" class="nav-link">
+                    <a href="/laporanmasuk" class="nav-link {{ request()->is('laporanmasuk') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-envelope"></i>
-                        <p>
-                            Laporan Masuk
-                        </p>
+                        <p>Laporan Masuk</p>
                     </a>
                 </li>
-                <li class="nav-header">Report</li>
+                <li class="nav-header">REPORT</li>
                 <li class="nav-item">
-                    <a href="generate-report.html" class="nav-link">
+                    <a href="generate-report.html" class="nav-link {{ request()->is('generate-report') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-print"></i>
-                        <p>
-                            Generate Report
-                        </p>
+                        <p>Generate Report</p>
                     </a>
                 </li>
-                <li class="nav-header">Account</li>
+                <li class="nav-header">ACCOUNT</li>
                 <li class="nav-item">
-                    <a href="profile.html" class="nav-link">
+                    <a href="profile.html" class="nav-link {{ request()->is('profile') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-user"></i>
-                        <p>
-                            Profile
-                        </p>
+                        <p>Profile</p>
                     </a>
                 </li>
-                <button class="btn btn-secondary btn-md">
-                    <li class="fa fa-sign-out-alt"></li> Logout
-                </button>
+                <li class="nav-item">
+                    <a href="/logout" class="nav-link">
+                        <i class="nav-icon fas fa-sign-out-alt"></i>
+                        <p>Logout</p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

@@ -14,15 +14,15 @@ return new class extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('nik', 50)->unique();
-            $table->string('name');
+            $table->string('nama_lengkap');
             $table->enum('jenis_kelamin',['Laki-Laki', 'Perempuan']);
-            $table->text('alamat');
-            $table->string('notelepon', 20);
+            $table->text('username');
+            $table->string('password');
+            $table->string('no_telepon', 20);
+            $table->string('alamat');
             $table->enum('role', ['Masyarakat', 'Petugas', 'Admin'])->default('Masyarakat');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
             $table->timestamps();
         });
     }

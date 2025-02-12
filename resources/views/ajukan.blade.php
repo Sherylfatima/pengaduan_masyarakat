@@ -17,7 +17,7 @@
                 <div class="row gy-4">
 
                   <div class="col-md-12">
-                    <label for="name-field" class="pb-2">Judul</label>
+                    <label for="name-field" class="pb-2">Judul Laporan</label>
                     <input type="text" name="name" id="name-field" class="form-control" required="">
                   </div>
 
